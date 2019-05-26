@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--<html>-->
+<head>
+    <meta charset = "ISO-8859-1" />
+    <link href = "css/styles.css" rel = "stylesheet"/>
+    <title>Spring Boot Application</title>
+</head>
+<body>
+<h4>Welcome to Thymeleaf Spring Boot web application</h4>
+<table border="1" style="width:300px">
+<!--<th:block th:each="users : ${users}">-->
+    <!--<tr>-->
+        <!--<td th:text="${users}">A Smoke Test'</td>-->
+    <!--</tr>-->
+<!--</th:block>-->
+
+    <tr th:each="users : ${atr}">
+        <!--<tr>-->
+            <td th:text="${atr}">A Smoke Test'</td>
+        <!--</tr>-->
+    </tr>
+
+
+
+</table>
+
+</body>
+</html>
